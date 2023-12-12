@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>kashi sahu college seraikella</h1>
+    <p>enter 12th percentage mark</p>
+    <input type="text" id="inp">
+    <button  onclick="Click()">Submit</button>
+    <p id="pra"></p>  
+    <script>
+        function Click() {
+            var a;
+            a = document.getElementById("inp").value;
+            if (a > 60) {
+                document.getElementById("pra").innerHTML = "your are selected";
+                document.getElementById("pra").style.color="green";
+            }
+            else {
+                document.getElementById("pra").innerHTML = "your are not selected";
+                document.getElementById("pra").style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>
